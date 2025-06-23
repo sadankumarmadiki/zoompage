@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Flex Grow and Shrink</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image 
+.container {
+    display: flex;
+    width: 80%; /* Fixed width to observe the effect */
+    gap: 10px; /* Adds space between buttons */
+}
+
+/* Base styles for all buttons */
+.btn {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Flex-grow and Flex-shrink behavior */
+.btn1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.btn2 {
+    flex-grow: 2;
+    flex-shrink: 1;
+} 
+
+.btn3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+</style>
+<body>
+    <div class="container">
+        <button class="btn btn1">Button 1</button>
+        <button class="btn btn2">Button 2</button>
+        <button class="btn btn3">Button 3</button>
+    </div>
+</body>
+</html>
